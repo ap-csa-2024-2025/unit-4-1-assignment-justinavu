@@ -48,11 +48,11 @@ public class Main
     String ans = "";
     while (i < len)
     {
-      if (i != word.length()-1)
+      if ( (i+1) % 3 != 0)
       {
-      ans += word.substring(i, i+2);
+      ans += word.substring(i, i+1);
       }
-      i += 3;
+      i++;
     }
     System.out.println(ans);
   }
